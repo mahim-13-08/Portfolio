@@ -223,7 +223,7 @@ document.addEventListener("DOMContentLoaded", () => {
       category: "Full-Stack Web (MERN)",
       techStack: "React.js · Node.js · Express.js · MongoDB · REST APIs · Git",
       image: "assets/projects/marketplace.svg",
-      github: "https://github.com/mahim-13-08",
+      github: "https://github.com/mahim-13-08/University-Marketplace-for-Secondhand-Products",
       contentHtml: `
         <h4>Project Overview</h4>
         <p>
@@ -249,7 +249,7 @@ document.addEventListener("DOMContentLoaded", () => {
       category: "Web Application",
       techStack: "PHP · MySQL · HTML5 · CSS3 · JavaScript",
       image: "assets/projects/travel.svg",
-      github: "https://github.com/mahim-13-08",
+      github: "https://github.com/mahim-13-08/CSE370-Database_Systems_Project",
       contentHtml: `
         <h4>Project Overview</h4>
         <p>
@@ -275,7 +275,7 @@ document.addEventListener("DOMContentLoaded", () => {
       category: "Desktop Application (Java)",
       techStack: "Java · MySQL · JDBC · Object-Oriented Programming (OOP)",
       image: "assets/projects/hospital.svg",
-      github: "https://github.com/mahim-13-08",
+      github: "https://github.com/mahim-13-08/Hospital-Management-System",
       contentHtml: `
         <h4>Project Overview</h4>
         <p>
@@ -301,7 +301,7 @@ document.addEventListener("DOMContentLoaded", () => {
       category: "Computer Graphics & Systems",
       techStack: "C++ · OpenGL · GLFW · GLAD · 3D Coordinate Math",
       image: "assets/projects/arrow-shooter.svg",
-      github: "https://github.com/mahim-13-08",
+      github: "https://github.com/mahim-13-08/3D-Arrow-Shooter",
       contentHtml: `
         <h4>Project Overview</h4>
         <p>
