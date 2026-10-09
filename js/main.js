@@ -551,12 +551,20 @@ document.addEventListener("DOMContentLoaded", () => {
   /* ==========================================================================
      11. Photography Gallery & Google Apps Script Synchronization Engine
      ========================================================================== */
+  const DEFAULT_APPS_SCRIPT_URL =
+    "https://script.google.com/macros/s/AKfycbwfO1TLxIs0ZVBQWQtLiAMZ8lzA2mgjCmaAgaT_D6qZrojCV6_a3EjHt6c7Euj3dKgj/exec";
+
+  const storedGasUrl = (localStorage.getItem("simone_photo_gas_url") || "").trim();
+
   const PHOTOGRAPHY_CONFIG = {
     folderId: "1MIkWgMCOyWRmrgu9IfoxapVc5kayo7HF",
     folderUrl:
       "https://drive.google.com/drive/folders/1MIkWgMCOyWRmrgu9IfoxapVc5kayo7HF?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto",
-    // Prioritize localStorage URL if previously configured in browser, else empty default
-    appsScriptUrl: localStorage.getItem("simone_photo_gas_url") || "",
+    // Always permanently connected to Nashid's live Google Apps Script endpoint
+    appsScriptUrl:
+      storedGasUrl && storedGasUrl.startsWith("https://script.google.com/")
+        ? storedGasUrl
+        : DEFAULT_APPS_SCRIPT_URL,
     // Fallback preview collection curated from Nashid's captured frames
     samplePhotos: [
       {
