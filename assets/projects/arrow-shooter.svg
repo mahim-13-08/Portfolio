@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1215"/>
+      <stop offset="50%" stop-color="#070c0e"/>
+      <stop offset="100%" stop-color="#030607"/>
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#142125"/>
+      <stop offset="100%" stop-color="#0d171a"/>
+    </linearGradient>
+    <radialGradient id="targetGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff3838" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#ff3838" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#ff3838" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="500" rx="16" fill="url(#gBg)"/>
+
+  <!-- Native Game Window Header -->
+  <rect x="0" y="0" width="800" height="42" rx="16" fill="url(#headerGrad)"/>
+  <rect x="0" y="24" width="800" height="18" fill="url(#headerGrad)"/>
+  <circle cx="28" cy="21" r="5" fill="#ff5f56"/>
+  <circle cx="46" cy="21" r="5" fill="#ffbd2e"/>
+  <circle cx="64" cy="21" r="5" fill="#27c93f"/>
+
+  <text x="400" y="26" fill="#e2e8f0" font-family="'Segoe UI', monospace" font-size="13" font-weight="600" text-anchor="middle">3D-Arrow-Shooter.exe · OpenGL Core Profile 3.3 · GLFW/GLAD</text>
+
+  <!-- Tech Badge -->
+  <rect x="680" y="9" width="95" height="24" rx="6" fill="rgba(32, 201, 151, 0.15)" stroke="#20c997" stroke-width="1"/>
+  <text x="727" y="25" fill="#20c997" font-family="'Segoe UI', monospace" font-size="11" font-weight="bold" text-anchor="middle">C++ · OpenGL</text>
+
+  <!-- 3D Viewport Area -->
+  <g id="viewport">
+    <!-- 3D Perspective Grid / Wireframe Floor -->
+    <g stroke="#1d483c" stroke-width="1.2" opacity="0.65">
+      <!-- Perspective lines radiating from vanishing point (400, 180) -->
+      <line x1="400" y1="180" x2="0" y2="480"/>
+      <line x1="400" y1="180" x2="80" y2="480"/>
+      <line x1="400" y1="180" x2="180" y2="480"/>
+      <line x1="400" y1="180" x2="280" y2="480"/>
+      <line x1="400" y1="180" x2="380" y2="480"/>
+      <line x1="400" y1="180" x2="420" y2="480"/>
+      <line x1="400" y1="180" x2="520" y2="480"/>
+      <line x1="400" y1="180" x2="620" y2="480"/>
+      <line x1="400" y1="180" x2="720" y2="480"/>
+      <line x1="400" y1="180" x2="800" y2="480"/>
+
+      <!-- Horizontal grid depth slices -->
+      <line x1="360" y1="200" x2="440" y2="200"/>
+      <line x1="320" y1="225" x2="480" y2="225"/>
+      <line x1="260" y1="260" x2="540" y2="260"/>
+      <line x1="180" y1="310" x2="620" y2="310"/>
+      <line x1="90" y1="380" x2="710" y2="380"/>
+      <line x1="0" y1="470" x2="800" y2="470"/>
+    </g>
+
+    <!-- 3D Axis Indicator (Top Right) -->
+    <g transform="translate(690, 80)">
+      <line x1="0" y1="0" x2="35" y2="0" stroke="#ff4757" stroke-width="2.5"/>
+      <text x="42" y="4" fill="#ff4757" font-family="monospace" font-size="11" font-weight="bold">X</text>
+      <line x1="0" y1="0" x2="0" y2="-35" stroke="#2ed573" stroke-width="2.5"/>
+      <text x="-4" y="-40" fill="#2ed573" font-family="monospace" font-size="11" font-weight="bold">Y</text>
+      <line x1="0" y1="0" x2="-22" y2="22" stroke="#1e90ff" stroke-width="2.5"/>
+      <text x="-32" y="32" fill="#1e90ff" font-family="monospace" font-size="11" font-weight="bold">Z</text>
+      <circle cx="0" cy="0" r="3" fill="#ffffff"/>
+    </g>
+
+    <!-- 3D Target Bullseye in distance -->
+    <g transform="translate(400, 180)">
+      <!-- Outer target ring -->
+      <ellipse cx="0" cy="0" rx="70" ry="45" fill="none" stroke="#20c997" stroke-width="2" stroke-dasharray="6 4"/>
+      <ellipse cx="0" cy="0" rx="46" ry="30" fill="none" stroke="#ff6b6b" stroke-width="2.5"/>
+      <ellipse cx="0" cy="0" rx="22" ry="14" fill="#ff3838"/>
+      <circle cx="0" cy="0" r="30" fill="url(#targetGlow)"/>
+
+      <!-- Collision Bounding Box -->
+      <rect x="-85" y="-55" width="170" height="110" rx="4" fill="rgba(32, 201, 151, 0.05)" stroke="#20c997" stroke-width="1" stroke-dasharray="4 4"/>
+      <text x="0" y="-62" fill="#20c997" font-family="monospace" font-size="10" text-anchor="middle">AABB COLLISION HITBOX</text>
+    </g>
+
+    <!-- Arrow in Flight with Trajectory Arc -->
+    <path d="M140 430 Q280 260 395 182" fill="none" stroke="#ffeb3b" stroke-width="2" stroke-dasharray="6 6"/>
+    
+    <!-- 3D Arrow Model Representation -->
+    <g transform="translate(340, 220) rotate(-32)">
+      <!-- Arrow shaft -->
+      <line x1="-80" y1="0" x2="40" y2="0" stroke="#f1f2f6" stroke-width="4" stroke-linecap="round"/>
+      <!-- Arrow head -->
+      <polygon points="40,-8 58,0 40,8" fill="#20c997"/>
+      <!-- Fletching / Feathers -->
+      <polygon points="-75,-10 -60,0 -75,0" fill="#ff4757"/>
+      <polygon points="-75,10 -60,0 -75,0" fill="#ff4757"/>
+    </g>
+
+    <!-- Player First-Person Bow Riser / Sight at bottom -->
+    <g transform="translate(200, 410)">
+      <path d="M0 60 Q60 -40 180 -10 Q140 40 120 70" fill="#182329" stroke="#20c997" stroke-width="2"/>
+    </g>
+
+    <!-- HUD Overlay -->
+    <!-- Crosshair in Center -->
+    <g transform="translate(400, 200)">
+      <circle cx="0" cy="0" r="16" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.7"/>
+      <line x1="-24" y1="0" x2="-8" y2="0" stroke="#20c997" stroke-width="2"/>
+      <line x1="8" y1="0" x2="24" y2="0" stroke="#20c997" stroke-width="2"/>
+      <line x1="0" y1="-24" x2="0" y2="-8" stroke="#20c997" stroke-width="2"/>
+      <line x1="0" y1="8" x2="0" y2="24" stroke="#20c997" stroke-width="2"/>
+      <circle cx="0" cy="0" r="2" fill="#ff3838"/>
+    </g>
+
+    <!-- Top Left HUD: Performance Metrics & Controls -->
+    <g transform="translate(24, 60)">
+      <rect width="210" height="92" rx="8" fill="rgba(10, 18, 22, 0.85)" stroke="rgba(255,255,255,0.08)"/>
+      <text x="14" y="24" fill="#20c997" font-family="'Courier New', monospace" font-size="12" font-weight="bold">FPS: 144.2 (0.69 ms)</text>
+      <text x="14" y="44" fill="#a0aec0" font-family="'Courier New', monospace" font-size="11">Draw Calls: 12 | Verts: 8.4k</text>
+      <text x="14" y="64" fill="#a0aec0" font-family="'Courier New', monospace" font-size="11">Camera: Yaw -14.2° Pitch 5.8°</text>
+      <text x="14" y="82" fill="#38bdf8" font-family="'Courier New', monospace" font-size="11">Physics: Euler Time-step Δt</text>
+    </g>
+
+    <!-- Bottom HUD Bar -->
+    <g transform="translate(200, 445)">
+      <rect width="400" height="34" rx="8" fill="rgba(10, 18, 22, 0.85)" stroke="rgba(32, 201, 151, 0.3)"/>
+      <text x="200" y="22" fill="#e2e8f0" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="600" text-anchor="middle">
+        WASD: Move Camera · Mouse: Look · Space/LMB: Draw &amp; Release Arrow
+      </text>
+    </g>
+  </g>
+</svg>

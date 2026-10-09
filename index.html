@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Md. Nashid Mahim | Software Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Md. Nashid Mahim, Computer Science & Engineering student at BRAC University specializing in backend development, Java, MERN stack, SQL, and Python."
+    />
+    <meta name="author" content="Md. Nashid Mahim" />
+    <meta name="keywords" content="Nashid Mahim, Software Developer, BRAC University, Backend Developer, MERN Stack, Java, Python, SQL, Dhaka" />
+
+    <!-- Open Graph / Meta -->
+    <meta property="og:title" content="Md. Nashid Mahim | Software Developer Portfolio" />
+    <meta property="og:description" content="Computer Science student at BRAC University building scalable backends and modern web applications." />
+    <meta property="og:type" content="website" />
+
+    <!-- Web Fonts (Poppins & Inter for world-class editorial typography) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="alternate icon" href="favicon.ico" />
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="side-header">
+    <!-- Top Scroll Reading Progress -->
+    <div id="scroll-progress" class="scroll-progress" aria-hidden="true"></div>
+
+    <!-- Noise Texture Overlay for Rich Depth -->
+    <div class="noise-overlay" aria-hidden="true"></div>
+
+    <!-- Mobile Top Navigation Bar (Visible on mobile/tablet screens < 992px) -->
+    <header class="mobile-top-bar" aria-label="Mobile Navigation Bar">
+      <div class="mobile-brand">
+        <a href="#home" class="brand-link">
+          <span class="brand-avatar-mini">
+            <img src="assets/profile.jpg" alt="Nashid Mahim Avatar" />
+          </span>
+          <span class="brand-name-mini">Nashid Mahim</span>
+        </a>
+      </div>
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </header>
+
+    <!-- Main Side Navigation Header (Simone Dark Desktop Sidebar & Mobile Drawer) -->
+    <header id="header" class="site-header" role="banner">
+      <div class="header-inner">
+        <!-- Developer Profile / Avatar Section -->
+        <div class="header-profile">
+          <a href="#home" class="profile-link" title="Md. Nashid Mahim">
+            <div class="avatar-wrapper">
+              <img
+                src="assets/profile.jpg"
+                alt="Md. Nashid Mahim Profile Photo"
+                class="profile-avatar"
+                id="profile-img"
+              />
+              <span class="status-indicator" title="Open to opportunities"></span>
+            </div>
+            <h1 class="profile-name">Md. Nashid Mahim</h1>
+            <p class="profile-tagline">Software Developer</p>
+          </a>
+        </div>
+
+        <!-- Primary Navigation Links (Smooth scroll + Active Spy) -->
+        <nav id="header-nav" class="primary-nav" aria-label="Primary Navigation">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#home" class="nav-link active">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                  <polyline points="9 22 9 12 15 12 15 22" />
+                </svg>
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+                <span>About Me</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                  <line x1="8" y1="21" x2="16" y2="21" />
+                  <line x1="12" y1="17" x2="12" y2="21" />
+                </svg>
+                <span>What I Do</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#resume" class="nav-link">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                  <polyline points="14 2 14 8 20 8" />
+                  <line x1="16" y1="13" x2="8" y2="13" />
+                  <line x1="16" y1="17" x2="8" y2="17" />
+                  <polyline points="10 9 9 9 8 9" />
+                </svg>
+                <span>Resume</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="7" height="7" />
+                  <rect x="14" y="3" width="7" height="7" />
+                  <rect x="14" y="14" width="7" height="7" />
+                  <rect x="3" y="14" width="7" height="7" />
+                </svg>
+                <span>Portfolio</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#endorsement" class="nav-link">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                  <line x1="9" y1="10" x2="15" y2="10" />
+                </svg>
+                <span>Endorsement</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Social Links & Direct Reach -->
+        <div class="header-footer">
+          <ul class="social-links" aria-label="Social Profiles">
+            <li>
+              <a
+                href="https://github.com/mahim-13-08"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="GitHub"
+                aria-label="GitHub Profile"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/md-nashid-mahim-16b814284"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="LinkedIn"
+                aria-label="LinkedIn Profile"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.78v8.37H6.46v-8.37M7.85 6.4a1.64 1.64 0 1 0 0 3.28 1.64 1.64 0 0 0 0-3.28Z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:mahimnashid@gmail.com"
+                title="Send Email"
+                aria-label="Send Email"
+              >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="tel:+8801402283470"
+                title="Call Phone"
+                aria-label="Call Phone"
+              >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright-mini">© 2026 Nashid Mahim</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Backdrop overlay for mobile drawer -->
+    <div id="drawer-backdrop" class="drawer-backdrop" aria-hidden="true"></div>
+
+    <!-- Main Content Area -->
+    <main id="content" class="site-main" role="main">
+
+      <!-- 1. Hero Section (#home) -->
+      <section id="home" class="hero-section">
+        <div class="hero-bg-visual" aria-hidden="true">
+          <div class="hero-glow hero-glow-1"></div>
+          <div class="hero-glow hero-glow-2"></div>
+          <div class="hero-grid-pattern"></div>
+        </div>
+
+        <div class="hero-container">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="badge-dot"></span>
+              <span>Available for Software Engineering Roles</span>
+            </div>
+            <p class="hero-greeting">Welcome to my portfolio</p>
+            <h1 class="hero-title">
+              I'm <span class="text-accent">Md. Nashid Mahim</span>
+            </h1>
+            <div class="hero-typing-wrapper">
+              <span class="typing-prefix">I'm a </span>
+              <span id="typed-text" class="typed-text"></span>
+              <span class="typing-cursor" aria-hidden="true">|</span>
+            </div>
+            <p class="hero-location">based in <strong>Dhaka, Bangladesh</strong>.</p>
+            <p class="hero-desc">
+              Computer Science and Engineering student at BRAC University with hands-on experience designing and developing web applications using Java, MERN Stack, SQL, and Python. Passionate about backend development, problem-solving, and building efficient, scalable solutions.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-primary rounded-pill">
+                <span>Hire Me</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a
+                href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Meeting+with+Md.+Nashid+Mahim&add=mahimnashid@gmail.com&details=Introductory+meeting+and+discussion+with+Md.+Nashid+Mahim.+Email:+mahimnashid@gmail.com&location=Google+Meet"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-calendar rounded-pill"
+                title="Book a meeting with Md. Nashid Mahim on Google Calendar"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+                  <circle cx="12" cy="15" r="1.5" fill="currentColor" />
+                </svg>
+                <span>Book a Meeting</span>
+              </a>
+              <a href="assets/Md_Nashid_Mahim_Resume.pdf" class="btn btn-outline rounded-pill" download>
+                <span>Download CV</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="7 10 12 15 17 10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+              </a>
+            </div>
+
+            <!-- Core Stack Chips Pill Strip -->
+            <div class="hero-tech-strip">
+              <span class="strip-label">Stack Focus:</span>
+              <div class="strip-badges">
+                <span class="tech-chip">Java</span>
+                <span class="tech-chip">Python</span>
+                <span class="tech-chip">React.js</span>
+                <span class="tech-chip">Node.js</span>
+                <span class="tech-chip">Express.js</span>
+                <span class="tech-chip">MongoDB</span>
+                <span class="tech-chip">MySQL</span>
+                <span class="tech-chip">C++</span>
+                <span class="tech-chip">OpenGL</span>
+                <span class="tech-chip">Git</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bouncing Scroll Down Chevron -->
+        <a href="#about" class="scroll-down-btn" aria-label="Scroll down to About section">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
+          </svg>
+        </a>
+      </section>
+
+      <!-- 2. About Me Section (#about) -->
+      <section id="about" class="section section-dark-1">
+        <div class="container">
+          <!-- Signature Simone Watermark Section Heading -->
+          <div class="section-heading-wrapper">
+            <h2 class="watermark-title">About Me</h2>
+            <div class="foreground-title">
+              <p class="heading-subtitle">Know Me More</p>
+              <span class="heading-separator-line"></span>
+            </div>
+          </div>
+
+          <!-- About Grid: Bio (Left) & Personal Details (Right) -->
+          <div class="about-grid">
+            <div class="about-bio">
+              <h3 class="about-statement">
+                I'm <span class="text-accent">Md. Nashid Mahim,</span> a Software Developer eager to solve tough engineering challenges.
+              </h3>
+              <p class="about-text">
+                I am a Computer Science and Engineering student at BRAC University with practical experience architecting and developing full-stack web applications, database schemas, and robust backend systems using modern technologies including Java, MERN Stack, SQL, and Python.
+              </p>
+              <p class="about-text">
+                My sweet spot lies in the foundational pillars of software: clean relational &amp; NoSQL database models, deterministic RESTful APIs, secure authentication, and data structures &amp; algorithms that scale effortlessly. I enjoy demystifying complex domain logic and translating it into clean, maintainable, production-ready code.
+              </p>
+              <p class="about-text">
+                I am actively preparing to contribute to a collaborative engineering team as a software developer, bringing strong problem-solving discipline, academic excellence, and a proactive continuous learning mindset.
+              </p>
+            </div>
+
+            <div class="about-details-card">
+              <ul class="details-list">
+                <li>
+                  <span class="detail-label">Name:</span>
+                  <span class="detail-value text-white">Md. Nashid Mahim</span>
+                </li>
+                <li>
+                  <span class="detail-label">Email:</span>
+                  <span class="detail-value">
+                    <a href="mailto:mahimnashid@gmail.com" class="link-hover">mahimnashid@gmail.com</a>
+                    <button class="copy-btn" id="btn-copy-email" data-clipboard="mahimnashid@gmail.com" title="Copy email">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                      </svg>
+                    </button>
+                  </span>
+                </li>
+                <li>
+                  <span class="detail-label">Phone:</span>
+                  <span class="detail-value">
+                    <a href="tel:+8801402283470" class="link-hover">+880 1402 283470</a>
+                  </span>
+                </li>
+                <li>
+                  <span class="detail-label">From:</span>
+                  <span class="detail-value text-white">Dhaka, Bangladesh</span>
+                </li>
+                <li>
+                  <span class="detail-label">University:</span>
+                  <span class="detail-value text-white">BRAC University (B.Sc. CSE)</span>
+                </li>
+                <li>
+                  <span class="detail-label">Status:</span>
+                  <span class="detail-value text-accent font-semibold">Available for Hire (Intern / Junior)</span>
+                </li>
+              </ul>
+              <div class="details-action">
+                <a href="assets/Md_Nashid_Mahim_Resume.pdf" class="btn btn-primary rounded-pill w-full" download>
+                  <span>Download CV</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                    <polyline points="7 10 12 15 17 10" />
+                    <line x1="12" y1="15" x2="12" y2="3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Simone 4-Column Metric Stat Counters -->
+          <div class="stats-counter-grid">
+            <div class="stat-box">
+              <h4 class="stat-number">
+                <span class="counter" data-target="4">0</span><span class="stat-plus">+</span>
+              </h4>
+              <p class="stat-label">Production &amp; Academic Builds</p>
+            </div>
+            <div class="stat-box">
+              <h4 class="stat-number">
+                <span class="counter" data-target="5" data-decimals="2">0</span>
+              </h4>
+              <p class="stat-label">HSC &amp; SSC Perfect GPA (5.00)</p>
+            </div>
+            <div class="stat-box">
+              <h4 class="stat-number">
+                <span class="counter" data-target="2026">0</span>
+              </h4>
+              <p class="stat-label">Graduation Year (BRACU CSE)</p>
+            </div>
+            <div class="stat-box">
+              <h4 class="stat-number">
+                <span class="counter" data-target="6">0</span>
+              </h4>
+              <p class="stat-label">Languages Known &amp; Learning</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. What I Do / Services Section (#services) -->
+      <section id="services" class="section section-dark-2">
+        <div class="container">
+          <!-- Watermark Heading -->
+          <div class="section-heading-wrapper">
+            <h2 class="watermark-title">Services</h2>
+            <div class="foreground-title">
+              <p class="heading-subtitle">What I Do?</p>
+              <span class="heading-separator-line"></span>
+            </div>
+          </div>
+
+          <!-- Simone Featured Boxes (6 Cards) -->
+          <div class="services-grid">
+            <!-- Service 1: Backend Development -->
+            <article class="featured-service-card">
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                  <line x1="6" y1="6" x2="6.01" y2="6"/>
+                  <line x1="6" y1="18" x2="6.01" y2="18"/>
+                </svg>
+              </div>
+              <div class="service-content">
+                <h3 class="service-title">Backend Architecture &amp; REST APIs</h3>
+                <p class="service-desc">
+                  Designing resilient server-side applications, deterministic RESTful APIs, JWT authentication, and business workflows using Node.js, Express, Java, and PHP.
+                </p>
+                <div class="service-tags">
+                  <span>Node.js</span>
+                  <span>Express</span>
+                  <span>Java</span>
+                  <span>PHP</span>
+                  <span>REST</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Service 2: Full-Stack Web Development -->
+            <article class="featured-service-card">
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21"/>
+                  <line x1="12" y1="17" x2="12" y2="21"/>
+                </svg>
+              </div>
+              <div class="service-content">
+                <h3 class="service-title">Full-Stack Web Development</h3>
+                <p class="service-desc">
+                  Building responsive, performant end-to-end web applications with React.js, component-based architectures, dynamic client routing, and secure API integrations.
+                </p>
+                <div class="service-tags">
+                  <span>React.js</span>
+                  <span>JavaScript (ES6+)</span>
+                  <span>HTML5/CSS3</span>
+                  <span>MERN</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Service 3: Database Design & Modeling -->
+            <article class="featured-service-card">
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                </svg>
+              </div>
+              <div class="service-content">
+                <h3 class="service-title">Database Engineering &amp; Modeling</h3>
+                <p class="service-desc">
+                  Structuring normalized relational schemas with MySQL and flexible document models with MongoDB. Designing efficient queries, indexing, and transactional integrity.
+                </p>
+                <div class="service-tags">
+                  <span>MySQL</span>
+                  <span>MongoDB</span>
+                  <span>CRUD</span>
+                  <span>Relational Schemas</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Service 4: Object-Oriented Software Design -->
+            <article class="featured-service-card">
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                  <polyline points="2 17 12 22 22 17"/>
+                  <polyline points="2 12 12 17 22 12"/>
+                </svg>
+              </div>
+              <div class="service-content">
+                <h3 class="service-title">Object-Oriented Software Systems</h3>
+                <p class="service-desc">
+                  Applying robust OOP principles (inheritance, polymorphism, encapsulation, abstractions) to build clean desktop solutions and scalable application codebases in Java.
+                </p>
+                <div class="service-tags">
+                  <span>Java</span>
+                  <span>OOP</span>
+                  <span>Design Patterns</span>
+                  <span>Desktop Apps</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Service 5: Computer Graphics & 3D Interactive -->
+            <article class="featured-service-card">
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="m21.12 6.4-6.05-4a2 2 0 0 0-2.17 0l-5.4 3.6"/>
+                  <path d="m3.1 9.4 6 4a2 2 0 0 0 2.2 0l6-4"/>
+                  <path d="m14 22 6.2-4.1a2 2 0 0 0 .8-1.7V9.7"/>
+                  <path d="M10 22 3.8 17.9A2 2 0 0 1 3 16.2V9.7"/>
+                </svg>
+              </div>
+              <div class="service-content">
+                <h3 class="service-title">Interactive 3D Graphics Simulation</h3>
+                <p class="service-desc">
+                  Building 3D graphical applications using C++ and OpenGL. Implementing camera transformations, rendering pipelines, coordinate math, and bounding collision physics.
+                </p>
+                <div class="service-tags">
+                  <span>C++</span>
+                  <span>OpenGL</span>
+                  <span>3D Rendering</span>
+                  <span>Collision Math</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Service 6: Problem Solving & Engineering Workflow -->
+            <article class="featured-service-card">
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                  <line x1="12" y1="17" x2="12.01" y2="17"/>
+                </svg>
+              </div>
+              <div class="service-content">
+                <h3 class="service-title">Algorithms &amp; Version Control</h3>
+                <p class="service-desc">
+                  Leveraging core Data Structures &amp; Algorithms for computational efficiency, alongside professional Git/GitHub habits, atomic commits, branch workflows, and clean code hygiene.
+                </p>
+                <div class="service-tags">
+                  <span>DSA</span>
+                  <span>Git</span>
+                  <span>GitHub</span>
+                  <span>Problem Solving</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Resume Section (#resume) -->
+      <section id="resume" class="section section-dark-1">
+        <div class="container">
+          <!-- Watermark Heading -->
+          <div class="section-heading-wrapper">
+            <h2 class="watermark-title">Summary</h2>
+            <div class="foreground-title">
+              <p class="heading-subtitle">Resume</p>
+              <span class="heading-separator-line"></span>
+            </div>
+          </div>
+
+          <!-- Two Column Timeline (Education vs. Professional Focus & Industry Reference) -->
+          <div class="resume-two-col">
+            <!-- Left Column: Education -->
+            <div class="resume-col">
+              <h3 class="resume-col-title">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                </svg>
+                <span>My Education</span>
+              </h3>
+
+              <div class="timeline-container">
+                <!-- Education Item 1 -->
+                <div class="timeline-card">
+                  <div class="timeline-badge">01/2023 to 09/2026</div>
+                  <h4 class="timeline-title">Bachelor of Science in Computer Science</h4>
+                  <p class="timeline-institution text-accent">BRAC University · Badda, Dhaka</p>
+                  <p class="timeline-status"><span class="pill-badge">Currently Studying</span></p>
+                  <p class="timeline-desc">
+                    Comprehensive study of computer science foundations, algorithms, object-oriented systems, database design, operating systems, and computer graphics. Active practical project work across full-stack and systems programming.
+                  </p>
+                </div>
+
+                <!-- Education Item 2 -->
+                <div class="timeline-card">
+                  <div class="timeline-badge">2020 to 2021</div>
+                  <h4 class="timeline-title">Higher Secondary Certificate (HSC)</h4>
+                  <p class="timeline-institution text-accent">Dhaka City College · Dhanmondi, Dhaka</p>
+                  <p class="timeline-grade"><strong class="text-white">GPA 5.00 / 5.00</strong> (Science Group)</p>
+                  <p class="timeline-desc">
+                    Achieved top distinction in higher secondary education, building deep mathematical reasoning, physics, and computational foundations that transitioned into computer science.
+                  </p>
+                </div>
+
+                <!-- Education Item 3 -->
+                <div class="timeline-card">
+                  <div class="timeline-badge">2014 to 2019</div>
+                  <h4 class="timeline-title">Secondary School Certificate (SSC)</h4>
+                  <p class="timeline-institution text-accent">Bindubasini Govt. Boys' High School · Tangail</p>
+                  <p class="timeline-grade"><strong class="text-white">GPA 5.00 / 5.00</strong> (Science)</p>
+                  <p class="timeline-desc">
+                    Graduated with a perfect GPA 5.00 from one of Bangladesh's premier government high schools, fostering consistency and analytical rigor from an early age.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: Focus, Languages & Verified Reference -->
+            <div class="resume-col">
+              <h3 class="resume-col-title">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                </svg>
+                <span>Focus &amp; Endorsement</span>
+              </h3>
+
+              <div class="timeline-container">
+                <!-- Focus Card -->
+                <div class="timeline-card">
+                  <div class="timeline-badge badge-accent">Career Objective</div>
+                  <h4 class="timeline-title">Software Developer / Backend Engineer</h4>
+                  <p class="timeline-institution text-accent">Internship &amp; Junior Roles</p>
+                  <p class="timeline-desc">
+                    Eager to contribute immediately to a collaborative engineering team. Focused on architecting scalable backend APIs, optimizing database queries, and learning production engineering best practices.
+                  </p>
+                </div>
+
+                <!-- Verified Reference Card -->
+                <div class="timeline-card highlight-card">
+                  <div class="timeline-badge badge-purple">Industry Reference</div>
+                  <h4 class="timeline-title">Mohammad Farhan Anzum</h4>
+                  <p class="timeline-institution text-accent">
+                    Manager, Enterprise Data Warehouse &amp; Analytics
+                  </p>
+                  <p class="reference-company text-white">Robi Axiata Limited</p>
+                  <ul class="reference-contact-list">
+                    <li>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                      <a href="mailto:farhanshourov@gmail.com">farhanshourov@gmail.com</a>
+                    </li>
+                    <li>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                      <a href="tel:+8801833181983">+880 1833 181983</a>
+                    </li>
+                  </ul>
+                  <p class="timeline-desc text-muted mt-2">
+                    Verified industry and academic reference supporting technical proficiency, engineering ethics, and proactive dedication.
+                  </p>
+                </div>
+
+                <!-- Languages Spoken Card -->
+                <div class="timeline-card">
+                  <div class="timeline-badge">Language Proficiency</div>
+                  <h4 class="timeline-title">Multilingual Communication</h4>
+                  <div class="lang-grid mt-3">
+                    <div class="lang-item">
+                      <span class="lang-name">Bengali</span>
+                      <span class="lang-level">Native</span>
+                    </div>
+                    <div class="lang-item">
+                      <span class="lang-name">English</span>
+                      <span class="lang-level">Professional Working</span>
+                    </div>
+                    <div class="lang-item">
+                      <span class="lang-name">Hindi</span>
+                      <span class="lang-level">Conversational</span>
+                    </div>
+                    <div class="lang-item">
+                      <span class="lang-name">Chinese</span>
+                      <span class="lang-level">Basics</span>
+                    </div>
+                    <div class="lang-item">
+                      <span class="lang-name">French</span>
+                      <span class="lang-level">Basics</span>
+                    </div>
+                    <div class="lang-item">
+                      <span class="lang-name">Arabic</span>
+                      <span class="lang-level">Learning</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- My Skills Section (Animated Progress Bars + Badges) -->
+          <div class="skills-wrapper">
+            <h3 class="skills-heading">My Technical Skills</h3>
+
+            <div class="skills-bars-grid">
+              <div class="skills-col">
+                <div class="skill-bar-item">
+                  <div class="skill-meta">
+                    <span class="skill-name">Java &amp; OOP Design</span>
+                    <span class="skill-percent">85%</span>
+                  </div>
+                  <div class="skill-progress-track">
+                    <div class="skill-progress-fill" data-progress="85%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar-item">
+                  <div class="skill-meta">
+                    <span class="skill-name">MERN Stack (React, Node, Express, MongoDB)</span>
+                    <span class="skill-percent">82%</span>
+                  </div>
+                  <div class="skill-progress-track">
+                    <div class="skill-progress-fill" data-progress="82%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar-item">
+                  <div class="skill-meta">
+                    <span class="skill-name">Python &amp; Scripting</span>
+                    <span class="skill-percent">80%</span>
+                  </div>
+                  <div class="skill-progress-track">
+                    <div class="skill-progress-fill" data-progress="80%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills-col">
+                <div class="skill-bar-item">
+                  <div class="skill-meta">
+                    <span class="skill-name">Relational Databases (MySQL) &amp; Schema Design</span>
+                    <span class="skill-percent">86%</span>
+                  </div>
+                  <div class="skill-progress-track">
+                    <div class="skill-progress-fill" data-progress="86%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar-item">
+                  <div class="skill-meta">
+                    <span class="skill-name">RESTful APIs &amp; Data Modeling</span>
+                    <span class="skill-percent">88%</span>
+                  </div>
+                  <div class="skill-progress-track">
+                    <div class="skill-progress-fill" data-progress="88%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar-item">
+                  <div class="skill-meta">
+                    <span class="skill-name">Git, GitHub &amp; Collaborative Workflows</span>
+                    <span class="skill-percent">90%</span>
+                  </div>
+                  <div class="skill-progress-track">
+                    <div class="skill-progress-fill" data-progress="90%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Categorized Skills Pill Cloud -->
+            <div class="skills-pill-cloud">
+              <div class="pill-category">
+                <span class="pill-category-title">Programming:</span>
+                <div class="pill-badges">
+                  <span class="badge-pill">Python</span>
+                  <span class="badge-pill">Java</span>
+                  <span class="badge-pill">C++</span>
+                  <span class="badge-pill">JavaScript (ES6+)</span>
+                  <span class="badge-pill">PHP</span>
+                  <span class="badge-pill">HTML5 / CSS3</span>
+                </div>
+              </div>
+
+              <div class="pill-category">
+                <span class="pill-category-title">Databases:</span>
+                <div class="pill-badges">
+                  <span class="badge-pill">MySQL</span>
+                  <span class="badge-pill">MongoDB</span>
+                </div>
+              </div>
+
+              <div class="pill-category">
+                <span class="pill-category-title">Tools &amp; Workflow:</span>
+                <div class="pill-badges">
+                  <span class="badge-pill">Git</span>
+                  <span class="badge-pill">GitHub</span>
+                  <span class="badge-pill">Postman</span>
+                  <span class="badge-pill">VS Code</span>
+                  <span class="badge-pill">MySQL Workbench</span>
+                </div>
+              </div>
+
+              <div class="pill-category">
+                <span class="pill-category-title">Core Concepts:</span>
+                <div class="pill-badges">
+                  <span class="badge-pill">Data Structures &amp; Algorithms</span>
+                  <span class="badge-pill">REST APIs</span>
+                  <span class="badge-pill">Object-Oriented Programming (OOP)</span>
+                  <span class="badge-pill">Computer Graphics (OpenGL)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Download CV Button in Resume Footer -->
+            <div class="resume-cta-center">
+              <a href="assets/Md_Nashid_Mahim_Resume.pdf" class="btn btn-outline rounded-pill" download>
+                <span>Download Full Resume (PDF)</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="7 10 12 15 17 10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Portfolio Section (#portfolio) -->
+      <section id="portfolio" class="section section-dark-2">
+        <div class="container">
+          <!-- Watermark Heading -->
+          <div class="section-heading-wrapper">
+            <h2 class="watermark-title">Portfolio</h2>
+            <div class="foreground-title">
+              <p class="heading-subtitle">Featured Projects</p>
+              <span class="heading-separator-line"></span>
+            </div>
+          </div>
+
+          <!-- Project Filter Tabs -->
+          <div class="portfolio-filter-tabs" role="tablist">
+            <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All Projects</button>
+            <button class="filter-tab" data-filter="web" role="tab" aria-selected="false">Web &amp; MERN</button>
+            <button class="filter-tab" data-filter="desktop" role="tab" aria-selected="false">Desktop &amp; Java</button>
+            <button class="filter-tab" data-filter="graphics" role="tab" aria-selected="false">Graphics &amp; C++</button>
+          </div>
+
+          <!-- Projects Grid -->
+          <div class="portfolio-grid" id="portfolio-grid">
+            <!-- Project 1: University Marketplace -->
+            <article class="portfolio-card show" data-category="web" data-id="marketplace">
+              <div class="portfolio-media">
+                <img
+                  src="assets/projects/marketplace.svg"
+                  alt="University Marketplace for Secondhand Products UI Mockup"
+                  loading="lazy"
+                />
+                <div class="portfolio-overlay">
+                  <span class="overlay-badge">MERN Stack</span>
+                  <h4 class="overlay-title">University Marketplace</h4>
+                  <p class="overlay-action">Click to view case study &amp; architecture</p>
+                </div>
+              </div>
+              <div class="portfolio-info">
+                <div class="portfolio-meta">
+                  <span class="category-tag">Full-Stack Web</span>
+                  <span class="tech-tag">React · Node · Mongo</span>
+                </div>
+                <h3 class="portfolio-title">University Marketplace for Secondhand Products</h3>
+                <p class="portfolio-summary">
+                  A full-stack campus marketplace for university students to trade textbooks and items. Built with RESTful APIs, JWT authentication, and responsive React discovery.
+                </p>
+                <div class="portfolio-card-footer">
+                  <button class="btn-card-link open-modal-btn" data-id="marketplace">
+                    <span>Case Study</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                  </button>
+                  <a
+                    href="https://github.com/mahim-13-08"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn-icon-link"
+                    title="View Source on GitHub"
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2: Travel Management System -->
+            <article class="portfolio-card show" data-category="web" data-id="travel">
+              <div class="portfolio-media">
+                <img
+                  src="assets/projects/travel.svg"
+                  alt="Travel Management System UI Mockup"
+                  loading="lazy"
+                />
+                <div class="portfolio-overlay">
+                  <span class="overlay-badge">PHP · MySQL</span>
+                  <h4 class="overlay-title">Travel Management System</h4>
+                  <p class="overlay-action">Click to view case study &amp; architecture</p>
+                </div>
+              </div>
+              <div class="portfolio-info">
+                <div class="portfolio-meta">
+                  <span class="category-tag">Web Application</span>
+                  <span class="tech-tag">PHP · MySQL · JS</span>
+                </div>
+                <h3 class="portfolio-title">Travel Management System</h3>
+                <p class="portfolio-summary">
+                  A web-based platform managing travel packages, user bookings, and operator accounts. Features normalized MySQL schemas, CRUD operations, and session authentication.
+                </p>
+                <div class="portfolio-card-footer">
+                  <button class="btn-card-link open-modal-btn" data-id="travel">
+                    <span>Case Study</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                  </button>
+                  <a
+                    href="https://github.com/mahim-13-08"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn-icon-link"
+                    title="View Source on GitHub"
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3: Hospital Management System -->
+            <article class="portfolio-card show" data-category="desktop" data-id="hospital">
+              <div class="portfolio-media">
+                <img
+                  src="assets/projects/hospital.svg"
+                  alt="Hospital Management System UI Mockup"
+                  loading="lazy"
+                />
+                <div class="portfolio-overlay">
+                  <span class="overlay-badge">Java · MySQL</span>
+                  <h4 class="overlay-title">Hospital Management System</h4>
+                  <p class="overlay-action">Click to view case study &amp; architecture</p>
+                </div>
+              </div>
+              <div class="portfolio-info">
+                <div class="portfolio-meta">
+                  <span class="category-tag">Desktop Application</span>
+                  <span class="tech-tag">Java · JDBC · MySQL</span>
+                </div>
+                <h3 class="portfolio-title">Hospital Management System</h3>
+                <p class="portfolio-summary">
+                  A desktop application for healthcare administration managing patient registries, appointments, and staff records. Built using Java OOP architecture and JDBC persistence.
+                </p>
+                <div class="portfolio-card-footer">
+                  <button class="btn-card-link open-modal-btn" data-id="hospital">
+                    <span>Case Study</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                  </button>
+                  <a
+                    href="https://github.com/mahim-13-08"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn-icon-link"
+                    title="View Source on GitHub"
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 4: 3D-Arrow-Shooter -->
+            <article class="portfolio-card show" data-category="graphics" data-id="arrow-shooter">
+              <div class="portfolio-media">
+                <img
+                  src="assets/projects/arrow-shooter.svg"
+                  alt="3D Arrow Shooter C++ OpenGL Simulation Mockup"
+                  loading="lazy"
+                />
+                <div class="portfolio-overlay">
+                  <span class="overlay-badge">C++ · OpenGL</span>
+                  <h4 class="overlay-title">3D Arrow Shooter</h4>
+                  <p class="overlay-action">Click to view case study &amp; architecture</p>
+                </div>
+              </div>
+              <div class="portfolio-info">
+                <div class="portfolio-meta">
+                  <span class="category-tag">3D Graphics Simulation</span>
+                  <span class="tech-tag">C++ · OpenGL · Shaders</span>
+                </div>
+                <h3 class="portfolio-title">3D Arrow Shooter</h3>
+                <p class="portfolio-summary">
+                  A 3D interactive graphics game exploring camera space coordinate math, bounding collision detection, object transformations, and real-time OpenGL rendering.
+                </p>
+                <div class="portfolio-card-footer">
+                  <button class="btn-card-link open-modal-btn" data-id="arrow-shooter">
+                    <span>Case Study</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                  </button>
+                  <a
+                    href="https://github.com/mahim-13-08"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn-icon-link"
+                    title="View Source on GitHub"
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. Endorsement / Reference Section (#endorsement) -->
+      <section id="endorsement" class="section section-dark-1">
+        <div class="container">
+          <!-- Watermark Heading -->
+          <div class="section-heading-wrapper">
+            <h2 class="watermark-title">Reference</h2>
+            <div class="foreground-title">
+              <p class="heading-subtitle">Industry Endorsement</p>
+              <span class="heading-separator-line"></span>
+            </div>
+          </div>
+
+          <div class="endorsement-card">
+            <div class="endorsement-quote-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+              </svg>
+            </div>
+            <blockquote class="endorsement-quote">
+              "Md. Nashid Mahim demonstrates exceptional diligence, structured analytical thinking, and a disciplined approach to software problem solving. His commitment to mastering backend architecture, relational data modeling, and practical software engineering principles makes him a high-potential asset to modern technical teams."
+            </blockquote>
+
+            <div class="endorsement-author-box">
+              <div class="author-avatar-badge">
+                <span>MFA</span>
+              </div>
+              <div class="author-info">
+                <h4 class="author-name">Mohammad Farhan Anzum</h4>
+                <p class="author-role text-accent">Manager, Enterprise Data Warehouse &amp; Analytics</p>
+                <p class="author-org">Robi Axiata Limited</p>
+                <div class="author-links">
+                  <a href="mailto:farhanshourov@gmail.com" class="link-hover">farhanshourov@gmail.com</a>
+                  <span class="divider">·</span>
+                  <a href="tel:+8801833181983" class="link-hover">+880 1833 181983</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. Contact Section (#contact) -->
+      <section id="contact" class="section section-dark-2">
+        <div class="container">
+          <!-- Watermark Heading -->
+          <div class="section-heading-wrapper">
+            <h2 class="watermark-title">Contact</h2>
+            <div class="foreground-title">
+              <p class="heading-subtitle">Get in Touch</p>
+              <span class="heading-separator-line"></span>
+            </div>
+          </div>
+
+          <div class="contact-two-col">
+            <!-- Left Column: Direct Info -->
+            <div class="contact-info-col">
+              <h3 class="contact-heading">Let's build something remarkable.</h3>
+              <p class="contact-intro">
+                I am currently open to junior software developer roles, engineering internships, and collaborative opportunities. Feel free to connect directly via email, phone, or LinkedIn!
+              </p>
+
+              <div class="contact-cards-stack">
+                <div class="contact-mini-card">
+                  <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                      <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                  </div>
+                  <div class="contact-meta">
+                    <span class="contact-meta-label">Location</span>
+                    <span class="contact-meta-value">Dhaka, Bangladesh</span>
+                  </div>
+                </div>
+
+                <div class="contact-mini-card">
+                  <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                      <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                  </div>
+                  <div class="contact-meta">
+                    <span class="contact-meta-label">Email</span>
+                    <span class="contact-meta-value">
+                      <a href="mailto:mahimnashid@gmail.com" class="link-hover">mahimnashid@gmail.com</a>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="contact-mini-card">
+                  <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                  </div>
+                  <div class="contact-meta">
+                    <span class="contact-meta-label">Direct Phone / WhatsApp</span>
+                    <span class="contact-meta-value">
+                      <a href="tel:+8801402283470" class="link-hover">+880 1402 283470</a>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="contact-mini-card">
+                  <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                      <line x1="16" y1="2" x2="16" y2="6"/>
+                      <line x1="8" y1="2" x2="8" y2="6"/>
+                      <line x1="3" y1="10" x2="21" y2="10"/>
+                      <circle cx="12" cy="15" r="1.5" fill="currentColor"/>
+                    </svg>
+                  </div>
+                  <div class="contact-meta">
+                    <span class="contact-meta-label">Google Calendar</span>
+                    <span class="contact-meta-value">
+                      <a
+                        href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Meeting+with+Md.+Nashid+Mahim&add=mahimnashid@gmail.com&details=Introductory+meeting+and+discussion+with+Md.+Nashid+Mahim.+Email:+mahimnashid@gmail.com&location=Google+Meet"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="link-hover"
+                      >
+                        Book a 1 on 1 Call ↗
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-social-row">
+                <span class="social-row-label">Connect on:</span>
+                <div class="social-chips">
+                  <a href="https://github.com/mahim-13-08" target="_blank" rel="noopener noreferrer" class="social-chip">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+                    <span>GitHub</span>
+                  </a>
+                  <a href="https://www.linkedin.com/in/md-nashid-mahim-16b814284" target="_blank" rel="noopener noreferrer" class="social-chip">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.78v8.37H6.46v-8.37M7.85 6.4a1.64 1.64 0 1 0 0 3.28 1.64 1.64 0 0 0 0-3.28Z"/></svg>
+                    <span>LinkedIn</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: Interactive Send Note Form -->
+            <div class="contact-form-col">
+              <div class="form-wrapper-card">
+                <h4 class="form-heading">Send a Message</h4>
+                <p class="form-subtext">Have an opportunity or project in mind? Fill out the details below.</p>
+
+                <form id="contact-form" class="simone-form" novalidate>
+                  <div class="form-grid-row">
+                    <div class="form-group">
+                      <label for="form-name" class="form-label">Your Name</label>
+                      <input
+                        type="text"
+                        id="form-name"
+                        name="name"
+                        class="form-control"
+                        placeholder="e.g. John Doe"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="form-email" class="form-label">Your Email</label>
+                      <input
+                        type="email"
+                        id="form-email"
+                        name="email"
+                        class="form-control"
+                        placeholder="e.g. john@company.com"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="form-subject" class="form-label">Subject</label>
+                    <input
+                      type="text"
+                      id="form-subject"
+                      name="subject"
+                      class="form-control"
+                      placeholder="e.g. Software Engineering Opportunity / Collaboration"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="form-message" class="form-label">Message</label>
+                    <textarea
+                      id="form-message"
+                      name="message"
+                      class="form-control textarea"
+                      rows="5"
+                      placeholder="Tell me about the role, technical stack, or project goals..."
+                      required
+                    ></textarea>
+                  </div>
+
+                  <div class="form-footer-action">
+                    <button type="submit" id="submit-btn" class="btn btn-primary rounded-pill">
+                      <span id="btn-text">Send Message</span>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="22" y1="2" x2="11" y2="13"/>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                      </svg>
+                    </button>
+                    <span id="form-status" class="form-status" role="status" aria-live="polite"></span>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Site Footer -->
+      <footer id="footer" class="site-footer">
+        <div class="container footer-container">
+          <p class="footer-copy">
+            Copyright © 2026 <strong class="text-white">Md. Nashid Mahim</strong>. All Rights Reserved.
+          </p>
+          <div class="footer-links">
+            <a href="assets/Md_Nashid_Mahim_Resume.pdf" class="footer-link" download>Download CV</a>
+            <span class="footer-divider">·</span>
+            <a href="#about" class="footer-link">About Me</a>
+            <span class="footer-divider">·</span>
+            <a href="#contact" class="footer-link">Contact</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#home" id="back-to-top" class="back-to-top-btn" title="Back to top" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <path d="m18 15-6-6-6 6"/>
+      </svg>
+    </a>
+
+    <!-- Theme Color Switcher Widget (Simone signature improvise feature) -->
+    <aside class="color-switcher-widget" id="color-switcher-widget" aria-label="Color Theme Switcher">
+      <button class="switcher-toggle-btn" id="switcher-toggle-btn" aria-label="Open Theme Color Switcher">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="3"/>
+          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+        </svg>
+      </button>
+      <div class="switcher-panel" id="switcher-panel">
+        <h5 class="switcher-title">Accent Colors</h5>
+        <div class="color-palette-options">
+          <button class="color-option-btn active" data-color="#20c997" style="background:#20c997" title="Simone Teal (Default)"></button>
+          <button class="color-option-btn" data-color="#00b4d8" style="background:#00b4d8" title="Sky Cyan"></button>
+          <button class="color-option-btn" data-color="#10b981" style="background:#10b981" title="Emerald Green"></button>
+          <button class="color-option-btn" data-color="#f59e0b" style="background:#f59e0b" title="Amber Orange"></button>
+          <button class="color-option-btn" data-color="#8b5cf6" style="background:#8b5cf6" title="Electric Violet"></button>
+          <button class="color-option-btn" data-color="#ef4444" style="background:#ef4444" title="Crimson Red"></button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Interactive Project Modal Case Study -->
+    <div id="project-modal" class="project-modal" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">×</button>
+          
+          <div class="modal-header">
+            <span id="modal-category" class="modal-category-badge">Category</span>
+            <h3 id="modal-title" class="modal-title">Project Title</h3>
+            <p id="modal-tech" class="modal-tech-stack">Tech Stack</p>
+          </div>
+
+          <div class="modal-media-wrapper">
+            <img id="modal-image" src="" alt="Project Visual Preview" class="modal-img" />
+          </div>
+
+          <div class="modal-body-content">
+            <div id="modal-html-desc" class="modal-html-desc"></div>
+          </div>
+
+          <div class="modal-footer-action">
+            <a id="modal-github-btn" href="https://github.com/mahim-13-08" target="_blank" rel="noopener noreferrer" class="btn btn-primary rounded-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/>
+              </svg>
+              <span>View on GitHub</span>
+            </a>
+            <button class="btn btn-outline rounded-pill" id="modal-close-footer-btn">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Notification Widget -->
+    <div id="toast" class="toast" role="status" aria-live="polite">
+      <span id="toast-message">Message</span>
+    </div>
+
+    <!-- Custom Main JS Script -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

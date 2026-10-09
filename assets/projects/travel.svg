@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#121820"/>
+      <stop offset="100%" stop-color="#0a0e14"/>
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a2330"/>
+      <stop offset="100%" stop-color="#101720"/>
+    </linearGradient>
+    <linearGradient id="seaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e4452"/>
+      <stop offset="100%" stop-color="#147d8e"/>
+    </linearGradient>
+    <linearGradient id="hillGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a4731"/>
+      <stop offset="100%" stop-color="#2d7a55"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" rx="16" fill="url(#tBg)"/>
+
+  <!-- Window Header Bar -->
+  <rect x="0" y="0" width="800" height="48" rx="16" fill="url(#headerGrad)"/>
+  <rect x="0" y="32" width="800" height="16" fill="url(#headerGrad)"/>
+  <circle cx="28" cy="24" r="6" fill="#ff5f56"/>
+  <circle cx="48" cy="24" r="6" fill="#ffbd2e"/>
+  <circle cx="68" cy="24" r="6" fill="#27c93f"/>
+
+  <!-- Search / Title -->
+  <rect x="180" y="10" width="440" height="28" rx="14" fill="#0b0f15" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="315" y="28" fill="#718096" font-family="'Segoe UI', system-ui, sans-serif" font-size="12">travel-manager.app/admin/bookings</text>
+
+  <!-- Tech Badge -->
+  <rect x="680" y="12" width="95" height="24" rx="6" fill="rgba(32, 201, 151, 0.15)" stroke="#20c997" stroke-width="1"/>
+  <text x="727" y="28" fill="#20c997" font-family="'Segoe UI', monospace" font-size="11" font-weight="bold" text-anchor="middle">PHP · MySQL</text>
+
+  <!-- Sidebar & Main Content Split -->
+  <!-- Left Side: App Nav Menu -->
+  <rect x="24" y="66" width="180" height="410" rx="12" fill="#131b26" stroke="rgba(255,255,255,0.06)"/>
+  <text x="44" y="100" fill="#20c997" font-family="'Segoe UI', sans-serif" font-size="15" font-weight="bold">✈ TravelAdmin</text>
+  
+  <rect x="36" y="120" width="156" height="34" rx="8" fill="#20c997"/>
+  <text x="56" y="142" fill="#061f17" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="bold">Bookings Dashboard</text>
+
+  <text x="56" y="185" fill="#a0aec0" font-family="'Segoe UI', sans-serif" font-size="13">Tour Packages</text>
+  <text x="56" y="225" fill="#a0aec0" font-family="'Segoe UI', sans-serif" font-size="13">Customer CRM</text>
+  <text x="56" y="265" fill="#a0aec0" font-family="'Segoe UI', sans-serif" font-size="13">Payment Logs</text>
+  <text x="56" y="305" fill="#a0aec0" font-family="'Segoe UI', sans-serif" font-size="13">SQL Schemas</text>
+
+  <rect x="36" y="420" width="156" height="40" rx="8" fill="#1a2330"/>
+  <circle cx="56" cy="440" r="12" fill="#20c997"/>
+  <text x="76" y="444" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="600">Admin Nashid</text>
+
+  <!-- Main Dashboard Area -->
+  <!-- 3 KPI Cards -->
+  <g transform="translate(220, 66)">
+    <rect width="170" height="74" rx="10" fill="#16202c" stroke="rgba(255,255,255,0.06)"/>
+    <text x="18" y="28" fill="#a0aec0" font-family="'Segoe UI', sans-serif" font-size="11">Total Bookings</text>
+    <text x="18" y="56" fill="#20c997" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="bold">1,280+</text>
+  </g>
+
+  <g transform="translate(405, 66)">
+    <rect width="170" height="74" rx="10" fill="#16202c" stroke="rgba(255,255,255,0.06)"/>
+    <text x="18" y="28" fill="#a0aec0" font-family="'Segoe UI', sans-serif" font-size="11">Active Packages</text>
+    <text x="18" y="56" fill="#38bdf8" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="bold">24 Tours</text>
+  </g>
+
+  <g transform="translate(590, 66)">
+    <rect width="186" height="74" rx="10" fill="#16202c" stroke="rgba(255,255,255,0.06)"/>
+    <text x="18" y="28" fill="#a0aec0" font-family="'Segoe UI', sans-serif" font-size="11">MySQL Query Latency</text>
+    <text x="18" y="56" fill="#f59e0b" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="bold">14 ms avg</text>
+  </g>
+
+  <!-- Featured Tour Packages Preview -->
+  <g transform="translate(220, 155)">
+    <!-- Package Card 1: Cox's Bazar -->
+    <g transform="translate(0, 0)">
+      <rect width="265" height="160" rx="10" fill="#16202c" stroke="rgba(255,255,255,0.06)"/>
+      <rect x="8" y="8" width="249" height="85" rx="8" fill="url(#seaGrad)"/>
+      <path d="M8 65 Q70 45 130 65 T257 65 L257 93 L8 93 Z" fill="#06222b" opacity="0.6"/>
+      <circle cx="215" cy="35" r="14" fill="#fcd34d" opacity="0.9"/>
+      <text x="16" y="115" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="bold">Cox's Bazar 4D/3N Premium</text>
+      <text x="16" y="136" fill="#a0aec0" font-family="'Segoe UI', sans-serif" font-size="11">Hotel · Buffet · Beach Safari</text>
+      <text x="210" y="136" fill="#20c997" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="bold">BDT 8.5k</text>
+    </g>
+
+    <!-- Package Card 2: Sylhet Tea Gardens -->
+    <g transform="translate(285, 0)">
+      <rect width="271" height="160" rx="10" fill="#16202c" stroke="rgba(255,255,255,0.06)"/>
+      <rect x="8" y="8" width="255" height="85" rx="8" fill="url(#hillGrad)"/>
+      <path d="M8 70 Q70 50 140 70 T263 70 L263 93 L8 93 Z" fill="#082215" opacity="0.7"/>
+      <circle cx="60" cy="35" r="12" fill="#fed7aa" opacity="0.8"/>
+      <text x="16" y="115" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="bold">Sreemangal Eco Forest Tour</text>
+      <text x="16" y="136" fill="#a0aec0" font-family="'Segoe UI', sans-serif" font-size="11">Resort · Lawachara · Tea Estate</text>
+      <text x="215" y="136" fill="#20c997" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="bold">BDT 6.2k</text>
+    </g>
+  </g>
+
+  <!-- Recent Bookings Table (CRUD view) -->
+  <g transform="translate(220, 330)">
+    <rect width="556" height="146" rx="10" fill="#141c26" stroke="rgba(255,255,255,0.06)"/>
+    <text x="18" y="26" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="bold">Recent Database Records (MySQL Table: `tbl_bookings`)</text>
+    
+    <!-- Table Header -->
+    <rect x="12" y="38" width="532" height="24" rx="4" fill="#1c2636"/>
+    <text x="24" y="54" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">ID</text>
+    <text x="65" y="54" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">CLIENT NAME</text>
+    <text x="200" y="54" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">PACKAGE</text>
+    <text x="370" y="54" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">STATUS</text>
+    <text x="470" y="54" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">ACTION</text>
+
+    <!-- Row 1 -->
+    <text x="24" y="84" fill="#cbd5e1" font-family="'Segoe UI', monospace" font-size="11">#1042</text>
+    <text x="65" y="84" fill="#f1f5f9" font-family="'Segoe UI', sans-serif" font-size="12">Tanvir Ahmed</text>
+    <text x="200" y="84" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="12">Cox's Bazar 4D/3N</text>
+    <rect x="370" y="72" width="70" height="18" rx="4" fill="rgba(32, 201, 151, 0.15)"/>
+    <text x="382" y="85" fill="#20c997" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="bold">CONFIRMED</text>
+    <rect x="470" y="72" width="48" height="18" rx="4" fill="#233145"/>
+    <text x="482" y="85" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="10">Edit</text>
+
+    <!-- Row 2 -->
+    <line x1="12" y1="98" x2="544" y2="98" stroke="rgba(255,255,255,0.04)"/>
+    <text x="24" y="122" fill="#cbd5e1" font-family="'Segoe UI', monospace" font-size="11">#1043</text>
+    <text x="65" y="122" fill="#f1f5f9" font-family="'Segoe UI', sans-serif" font-size="12">Sadia Rahman</text>
+    <text x="200" y="122" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="12">Sreemangal Eco Forest</text>
+    <rect x="370" y="110" width="70" height="18" rx="4" fill="rgba(56, 189, 248, 0.15)"/>
+    <text x="385" y="123" fill="#38bdf8" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="bold">PENDING</text>
+    <rect x="470" y="110" width="48" height="18" rx="4" fill="#233145"/>
+    <text x="482" y="123" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="10">Edit</text>
+  </g>
+</svg>
