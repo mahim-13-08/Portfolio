@@ -7,7 +7,7 @@
     <title>Md. Nashid Mahim | Software Developer Portfolio</title>
     <meta
       name="description"
-      content="Portfolio of Md. Nashid Mahim, Computer Science & Engineering student at BRAC University specializing in backend development, Java, MERN stack, SQL, and Python."
+      content="Portfolio of Md. Nashid Mahim, Computer Science student at BRAC University specializing in backend development, Java, MERN stack, SQL, and Python."
     />
     <meta name="author" content="Md. Nashid Mahim" />
     <meta name="keywords" content="Nashid Mahim, Software Developer, BRAC University, Backend Developer, MERN Stack, Java, Python, SQL, Dhaka" />
@@ -131,6 +131,15 @@
               </a>
             </li>
             <li class="nav-item">
+              <a href="#photography" class="nav-link nav-link-photography" id="nav-link-photography" title="Photography">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                  <circle cx="12" cy="13" r="4" />
+                </svg>
+                <span>Photography</span>
+              </a>
+            </li>
+            <li class="nav-item">
               <a href="#endorsement" class="nav-link">
                 <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
@@ -217,7 +226,12 @@
     <!-- Main Content Area -->
     <main id="content" class="site-main" role="main">
 
-      <!-- 1. Hero Section (#home) -->
+      <!-- ====================================================================
+           VIEW 1: Main Developer Portfolio (Front Page View)
+           ==================================================================== -->
+      <div id="front-page-view" class="site-view front-page-view active">
+
+        <!-- 1. Hero Section (#home) -->
       <section id="home" class="hero-section">
         <div class="hero-bg-visual" aria-hidden="true">
           <div class="hero-glow hero-glow-1"></div>
@@ -242,7 +256,7 @@
             </div>
             <p class="hero-location">based in <strong>Dhaka, Bangladesh</strong>.</p>
             <p class="hero-desc">
-              Computer Science and Engineering student at BRAC University with hands-on experience designing and developing web applications using Java, MERN Stack, SQL, and Python. Passionate about backend development, problem-solving, and building efficient, scalable solutions.
+              Computer Science student at BRAC University with hands-on experience designing and developing web applications using Java, MERN Stack, SQL, and Python. Passionate about backend development, problem-solving, and building efficient, scalable solutions.
             </p>
 
             <div class="hero-actions">
@@ -324,7 +338,7 @@
                 I'm <span class="text-accent">Md. Nashid Mahim,</span> a Software Developer eager to solve tough engineering challenges.
               </h3>
               <p class="about-text">
-                I am a Computer Science and Engineering student at BRAC University with practical experience architecting and developing full-stack web applications, database schemas, and robust backend systems using modern technologies including Java, MERN Stack, SQL, and Python.
+                I am a Computer Science student at BRAC University with practical experience architecting and developing full-stack web applications, database schemas, and robust backend systems using modern technologies including Java, MERN Stack, SQL, and Python.
               </p>
               <p class="about-text">
                 My sweet spot lies in the foundational pillars of software: clean relational &amp; NoSQL database models, deterministic RESTful APIs, secure authentication, and data structures &amp; algorithms that scale effortlessly. I enjoy demystifying complex domain logic and translating it into clean, maintainable, production-ready code.
@@ -364,7 +378,7 @@
                 </li>
                 <li>
                   <span class="detail-label">University:</span>
-                  <span class="detail-value text-white">BRAC University (B.Sc. CSE)</span>
+                  <span class="detail-value text-white">BRAC University (B.Sc. CS)</span>
                 </li>
                 <li>
                   <span class="detail-label">Status:</span>
@@ -402,13 +416,50 @@
               <h4 class="stat-number">
                 <span class="counter" data-target="2026">0</span>
               </h4>
-              <p class="stat-label">Graduation Year (BRACU CSE)</p>
+              <p class="stat-label">Graduation Year (BRACU CS)</p>
             </div>
             <div class="stat-box">
               <h4 class="stat-number">
                 <span class="counter" data-target="6">0</span>
               </h4>
               <p class="stat-label">Languages Known &amp; Learning</p>
+            </div>
+          </div>
+
+          <!-- Standalone Photography Showcase Callout Card (Placed right below stats counters inside Know Me More) -->
+          <div class="about-photography-callout" id="about-photography-callout">
+            <div class="callout-glass-card">
+              <div class="callout-icon-col">
+                <div class="callout-lens-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                    <circle cx="12" cy="13" r="4"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="callout-body-col">
+                <div class="callout-badge-row">
+                  <span class="callout-pill-tag">Visual Pursuits</span>
+                  <span class="callout-pill-sync">● Live Google Drive Stream</span>
+                </div>
+                <h3 class="callout-headline">Looking for my Photography?</h3>
+                <p class="callout-paragraph">
+                  Beyond software engineering, I capture architectural angles, campus memories, and sky vistas through my camera. Explore the standalone photography gallery synchronized live from Google Drive via Google Apps Script.
+                </p>
+              </div>
+              <div class="callout-action-col">
+                <button type="button" class="btn btn-primary rounded-pill btn-open-photography" id="btn-open-photography">
+                  <svg class="btn-camera-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                    <circle cx="12" cy="13" r="4"/>
+                  </svg>
+                  <span>Explore Photography</span>
+                  <svg class="btn-arrow-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"/>
+                    <polyline points="12 5 19 12 12 19"/>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -1273,11 +1324,158 @@
             <span class="footer-divider">·</span>
             <a href="#about" class="footer-link">About Me</a>
             <span class="footer-divider">·</span>
+            <a href="#photography" class="footer-link footer-link-photography">Photography</a>
+            <span class="footer-divider">·</span>
             <a href="#contact" class="footer-link">Contact</a>
           </div>
         </div>
       </footer>
-    </main>
+    </div><!-- /#front-page-view -->
+
+    <!-- ====================================================================
+         VIEW 2: Dedicated Standalone Photography Section (Separate View)
+         ==================================================================== -->
+    <div id="photography-view" class="site-view photography-view" aria-hidden="true">
+      <!-- Dedicated Sticky Top Bar for Photography View -->
+      <header class="photo-view-nav" aria-label="Photography View Navigation">
+        <div class="container photo-nav-container">
+          <button type="button" class="btn btn-outline rounded-pill btn-back-to-portfolio" id="btn-back-to-portfolio">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="19" y1="12" x2="5" y2="12"/>
+              <polyline points="12 19 5 12 12 5"/>
+            </svg>
+            <span>Back to Portfolio</span>
+          </button>
+
+          <div class="photo-nav-brand">
+            <span class="photo-brand-dot"></span>
+            <span class="photo-brand-text">Nashid Mahim · Photography</span>
+          </div>
+
+          <div class="photo-nav-actions">
+            <div class="sync-status-badge" id="sync-status-badge" title="Live Google Drive Sync Status">
+              <span class="status-dot-pulse"></span>
+              <span id="sync-status-text">Connected: Drive Folder</span>
+            </div>
+
+            <button type="button" id="btn-refresh-photos" class="btn btn-outline btn-sm rounded-pill" title="Re-fetch latest photos from Google Drive">
+              <svg id="refresh-spin-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+              </svg>
+              <span>Sync Drive</span>
+            </button>
+
+            <a
+              href="https://drive.google.com/drive/folders/1MIkWgMCOyWRmrgu9IfoxapVc5kayo7HF?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary btn-sm rounded-pill"
+              title="Open Source Google Drive Folder"
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/>
+              </svg>
+              <span>Drive Folder ↗</span>
+            </a>
+
+            <button type="button" id="btn-open-gas-setup" class="btn btn-icon-only rounded-circle" title="Google Apps Script Setup & API Endpoint">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <!-- Photography Section Main Content -->
+      <section id="photography" class="section section-dark-1 photo-showcase-section">
+        <div class="container">
+          <!-- Watermark Heading -->
+          <div class="section-heading-wrapper">
+            <h2 class="watermark-title">Moments</h2>
+            <div class="foreground-title">
+              <p class="heading-subtitle">Through My Lens</p>
+              <span class="heading-separator-line"></span>
+            </div>
+          </div>
+
+          <!-- Section Intro & Meta Strip -->
+          <div class="photo-showcase-intro">
+            <p class="photo-lead-text">
+              A curated collection of frames, architectural angles, and skies captured across BRAC University campus and beyond. Synchronized in real time directly from Google Drive using <strong>Google Apps Script</strong>.
+            </p>
+            <div class="photo-meta-strip">
+              <div class="photo-meta-pill">
+                <span class="meta-label">Folder ID:</span>
+                <span class="meta-val font-mono">1MIkWgMCOyWRmrgu9...</span>
+              </div>
+              <div class="photo-meta-pill">
+                <span class="meta-label">Sync Method:</span>
+                <span class="meta-val text-accent">DriveApp Web App</span>
+              </div>
+              <div class="photo-meta-pill" id="photo-count-pill">
+                <span class="meta-label">Photos:</span>
+                <span class="meta-val font-mono" id="photo-count-val">Loading...</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dynamic Photos Grid -->
+          <div class="photos-grid" id="photos-grid"></div>
+
+          <!-- Dynamic Status / Helper Message -->
+          <div id="photos-status-message" class="photos-status-message hidden"></div>
+
+          <!-- Bottom Return Callout Banner -->
+          <div class="photo-return-banner">
+            <div class="return-banner-body">
+              <h4>Ready to review software engineering work?</h4>
+              <p>Explore full-stack MERN, Java enterprise systems, C++ graphics simulations, and technical case studies.</p>
+            </div>
+            <button type="button" class="btn btn-primary rounded-pill btn-back-to-portfolio" id="btn-back-to-portfolio-bottom">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="19" y1="12" x2="5" y2="12"/>
+                <polyline points="12 19 5 12 12 5"/>
+              </svg>
+              <span>Back to Developer Portfolio</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dedicated Footer for Photography View -->
+      <footer class="site-footer photo-view-footer">
+        <div class="container footer-container">
+          <p class="footer-copy">
+            Photography &amp; Portfolio © 2026 <strong class="text-white">Md. Nashid Mahim</strong>. All Rights Reserved.
+          </p>
+          <div class="footer-links">
+            <button type="button" class="footer-link-btn btn-back-to-portfolio">Developer Portfolio</button>
+            <span class="footer-divider">·</span>
+            <a href="https://drive.google.com/drive/folders/1MIkWgMCOyWRmrgu9IfoxapVc5kayo7HF?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto" target="_blank" rel="noopener noreferrer" class="footer-link">Google Drive</a>
+          </div>
+        </div>
+      </footer>
+    </div><!-- /#photography-view -->
+  </main>
+
+  <!-- Cinematic Page Transition Curtain -->
+  <div id="page-curtain" class="page-curtain" aria-hidden="true">
+    <div class="curtain-panel curtain-panel-1"></div>
+    <div class="curtain-panel curtain-panel-2"></div>
+    <div class="curtain-center">
+      <div class="curtain-icon-wrap">
+        <svg class="curtain-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+          <circle cx="12" cy="13" r="4"/>
+        </svg>
+      </div>
+      <h4 class="curtain-title" id="curtain-title">Entering Photography</h4>
+      <p class="curtain-sub" id="curtain-sub">Synchronizing live with Google Drive...</p>
+      <div class="curtain-bar"><div class="curtain-bar-fill"></div></div>
+    </div>
+  </div>
 
     <!-- Floating Back to Top Button -->
     <a href="#home" id="back-to-top" class="back-to-top-btn" title="Back to top" aria-label="Back to top">
@@ -1335,6 +1533,133 @@
               <span>View on GitHub</span>
             </a>
             <button class="btn btn-outline rounded-pill" id="modal-close-footer-btn">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Interactive Photography Lightbox Modal -->
+    <div id="photo-lightbox-modal" class="photo-lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="lightbox-overlay" id="lightbox-backdrop"></div>
+      <div class="lightbox-container">
+        <button type="button" class="lightbox-close-btn" id="lightbox-close-btn" aria-label="Close Lightbox">×</button>
+        
+        <button type="button" class="lightbox-nav-btn prev-btn" id="lightbox-prev-btn" aria-label="Previous Photo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="m15 18-6-6 6-6"/>
+          </svg>
+        </button>
+        
+        <div class="lightbox-content">
+          <div class="lightbox-image-wrapper">
+            <img id="lightbox-img" src="" alt="Fullscreen Photography Preview" />
+            <div class="lightbox-loader" id="lightbox-loader">
+              <div class="spinner"></div>
+            </div>
+          </div>
+          <div class="lightbox-caption-bar">
+            <div class="lightbox-info">
+              <h4 id="lightbox-title" class="lightbox-title">Photo Title</h4>
+              <div class="lightbox-meta">
+                <span id="lightbox-date" class="meta-item">Date</span>
+                <span class="meta-dot">·</span>
+                <span id="lightbox-size" class="meta-item">Size</span>
+                <span class="meta-dot">·</span>
+                <span id="lightbox-counter" class="meta-counter">1 of 12</span>
+              </div>
+            </div>
+            <div class="lightbox-actions">
+              <a id="lightbox-drive-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm rounded-pill" title="Open original file in Google Drive">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/>
+                </svg>
+                <span>Drive File ↗</span>
+              </a>
+              <a id="lightbox-download-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm rounded-pill" download title="View high-resolution original">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                  <polyline points="7 10 12 15 17 10"/>
+                  <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                <span>Original</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="lightbox-nav-btn next-btn" id="lightbox-next-btn" aria-label="Next Photo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="m9 18 6-6-6-6"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Google Apps Script Setup & Config Modal -->
+    <div id="gas-setup-modal" class="project-modal gas-setup-modal" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="modal-close-btn" id="gas-modal-close-btn" aria-label="Close modal">×</button>
+          
+          <div class="modal-header">
+            <span class="modal-category-badge">Google Apps Script API</span>
+            <h3 class="modal-title">Live Drive Photos Synchronization</h3>
+            <p class="modal-tech-stack">DriveApp REST Endpoint · Zero Authentication Barrier</p>
+          </div>
+
+          <div class="modal-body-content">
+            <p class="gas-setup-desc">
+              Connect your portfolio dynamically to your Google Drive folder (<code>1MIkWgMCOyWRmrgu9IfoxapVc5kayo7HF</code>) using Google Apps Script as a free serverless API endpoint.
+            </p>
+
+            <div class="gas-steps-list">
+              <div class="gas-step-card">
+                <span class="step-badge">Step 1</span>
+                <div class="step-body">
+                  <h5>Folder Public Access</h5>
+                  <p>Open <a href="https://drive.google.com/drive/folders/1MIkWgMCOyWRmrgu9IfoxapVc5kayo7HF" target="_blank" rel="noopener noreferrer" class="link-hover">Google Drive Folder ↗</a>, click <strong>Share</strong>, set <em>General Access</em> to <strong>Anyone with the link</strong> (Viewer).</p>
+                </div>
+              </div>
+
+              <div class="gas-step-card">
+                <span class="step-badge">Step 2</span>
+                <div class="step-body">
+                  <h5>Deploy Apps Script</h5>
+                  <p>Visit <a href="https://script.google.com" target="_blank" rel="noopener noreferrer" class="link-hover">script.google.com</a>, create a project, paste <code>google-apps-script/Code.gs</code>, click <strong>Deploy &gt; New deployment &gt; Web app</strong> (<em>Execute as: Me</em>, <em>Who has access: Anyone</em>).</p>
+                  <button type="button" id="btn-copy-gas-code" class="btn btn-outline btn-xs rounded-pill mt-2">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                    </svg>
+                    <span>Copy Code.gs</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="gas-step-card">
+                <span class="step-badge">Step 3</span>
+                <div class="step-body">
+                  <h5>Connect &amp; Test Live</h5>
+                  <p>Paste your deployed Web App URL below to test and connect instantly in this browser:</p>
+                  <div class="gas-input-wrap">
+                    <input
+                      type="url"
+                      id="gas-endpoint-url"
+                      class="form-control"
+                      placeholder="https://script.google.com/macros/s/AKfycb.../exec"
+                    />
+                    <button type="button" id="btn-save-gas-url" class="btn btn-primary rounded-pill">
+                      <span>Connect &amp; Sync</span>
+                    </button>
+                  </div>
+                  <div id="gas-test-feedback" class="gas-feedback"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer-action">
+            <button type="button" class="btn btn-outline rounded-pill" id="gas-modal-close-footer-btn">Close</button>
           </div>
         </div>
       </div>
