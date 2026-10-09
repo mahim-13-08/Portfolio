@@ -450,20 +450,21 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      // Generate mailto link
-      const mailtoUrl = `mailto:mahimnashid@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
-        `Hi Nashid,\n\n${message}\n\nBest regards,\n${name}\nEmail: ${email}`
-      )}`;
+      // Generate direct Gmail composer link (no Outlook application popups)
+      const bodyContent = `Hi Nashid,\n\n${message}\n\nBest regards,\n${name}\nEmail: ${email}`;
+      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=mahimnashid@gmail.com&su=${encodeURIComponent(
+        subject
+      )}&body=${encodeURIComponent(bodyContent)}`;
 
       if (formStatus) {
         formStatus.className = "form-status success";
-        formStatus.textContent = "Opening your email client...";
+        formStatus.textContent = "Opening Gmail composer...";
       }
 
-      showToast("Opening default email client...");
+      showToast("Opening Gmail composer...");
       setTimeout(() => {
-        window.location.href = mailtoUrl;
-      }, 500);
+        window.open(gmailUrl, "_blank", "noopener,noreferrer");
+      }, 400);
     });
   }
 
