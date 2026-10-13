@@ -35,6 +35,12 @@ A high-performance, responsive Single-Page Application (SPA) developer portfolio
 - **Simone Signature Watermark Headings**: Oversized low-opacity typography layers paired with crisp foreground titles and accent underline bars.
 - **Dynamic Typing Animation**: Realistic typing and deleting loop in the hero section cycling through developer roles.
 - **Live Theme Customizer**: Floating widget allowing visitors to switch between 5 accent color palettes (Spring Green, Electric Violet, Ocean Cyan, Amber Gold, Crimson Red) in real-time, with localStorage persistence.
+- **Dedicated Standalone Photography Section & Cinematic Page Transition**:
+  - **Decoupled from Front Page**: The front page remains 100% focused on software engineering. Photography is hosted in a dedicated standalone view.
+  - **Cinematic Transition Curtain**: Seamless 2-phase hardware-accelerated curtain wipe when transitioning between the Developer Portfolio and the Photography Gallery.
+  - **Live Google Drive Sync**: Serverless **Google Apps Script** endpoint (`google-apps-script/Code.gs`) streaming captures from Google Drive folder `1MIkWgMCOyWRmrgu9IfoxapVc5kayo7HF`.
+  - **Interactive Lightbox Modal**: Fullscreen previews, metadata badges, keyboard navigation (`←`/`→`/`Esc`), and direct Drive file links.
+  - **In-Browser Endpoint Testing**: 1-click Code.gs copy and live Web App URL connection tester.
 - **Interactive Project Showcase**:
   - Filter projects by category (*All, Java & OOP, MERN & Web, Database & SQL*).
   - Detailed modal case studies with full architecture descriptions, tech tags, and direct GitHub repository links.
